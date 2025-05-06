@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: springboot-webflux-service
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8080"
+      instance:
+        name: admin-application
+        service-url: "http://localhost:8080"
+server:
+  port: 8080
+management:
+  endpoints:
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: "*"
